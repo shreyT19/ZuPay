@@ -127,7 +127,7 @@
 }
 .right-side h1{
     margin-bottom: 10px;
-    font-size :4rem;
+    font-size :3.5rem;
     width: 100%;
     color:black;
     
@@ -139,6 +139,23 @@
     line-height: 1.25;
     width: 80%;
     
+}
+
+/* Investment Calculator */
+
+.currency-container{
+    background-image: url(/ZuPay/assets/asset\ 22.png);
+}
+.currency-section{
+    justify-content: space-around;
+    
+}
+
+
+.left-text-section{
+    width: 40%;
+    
+    flex-direction: column;
 }
 
 
