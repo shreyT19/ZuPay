@@ -1,5 +1,3 @@
-@import url(utlities.css);
-
 
 
 .container{
@@ -23,7 +21,7 @@
     
 }
 .company-logo{
-    margin-inline: 20px;
+    margin-left: 10px;
 }
 
 .company-logo img{
@@ -32,14 +30,12 @@
 }
 
 
-.nav-links{
-    font-weight: bold;
-    width: 100%;
-    margin-inline: 20px;
-    display: flex;
+.nav-links ul{
+   
+    list-style: none;
     justify-content: flex-end;
-    align-items: center;
     gap:70px;
+    margin-right: 20px;
 }
 .nav-links a{
     font-size: 1.25rem;
@@ -62,77 +58,79 @@
 
 /* NavBar Ends */
 
-/* Hero Section */
+/* Header Section */
 
-.hero-container{
-    display: flex;
-    /* margin:40px 100px 40px 40px; */
-    margin-block: 40px;
+header{
+    padding:40px 30px;
+
+}
+.header-section{
+    justify-content: center;
+    gap:50px;
     
+   
+}
 
-}
-.left-section{
-    width: 60%;
-}
 .left-section h1{
-    
-    margin-top: 40px;
-    line-height: 1.5;
+    font-weight: bold;
+    line-height: 1.35;
+    margin-bottom: 20px;
+}
+.left-section p{
+    max-width: 500px !important;
+    font-size: 1.75rem;
+    line-height: 1.25;
+    color:grey
 }
 
-.left-section h4{
-    width: 75%;
-    color:grey;
-    margin-top: 20px;
-    font-size: 1.75rem;
-    font-weight: normal;
-    line-height: 1.25;
+.get-it{
+    margin-top: 30px;
 }
-.left-section a {
-    position:relative;
-    top:80px;
-}
-.right-section{
-    margin-right: 60px;
-    display:flex;
-}
-.right-section img{
-    width: 500px;
+
+.header-image{
+    width: 100%;
+    
     
 }
+
+
+
+
+
 
 
 /*  Section Starts */
 .big-feature-section{
-    margin-block: 100px;
+    margin-block: 40px;
+    padding: 30px var(--padding-inline-section) 0;
 }
 .big-feature-container{
     /* color:red; */
-}
-.left-side{
     justify-content: center;
-    width: 50% ; 
+    gap:70px;
+}
+.left-side img{
+    justify-content: center;
+    width: 100% ; 
     
 }
 .left-side img{
-    width: 200px ; 
-    box-shadow: inset;
-    transition: width 0.2s ease-out;
-}
-.left-side img:hover{
-    transition: 0.2s ease-in-out;
-    width: 250px ;
+    width: 300px ; 
+    
 }
 
 
 
 .right-side{
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    align-items: flex-start; 
 }
 .right-side h1{
     margin-bottom: 10px;
     font-size :3.5rem;
-    width: 100%;
+    
     color:black;
     
 }
@@ -141,44 +139,57 @@
     color:grey;
     font-size: 1.75rem;
     line-height: 1.25;
-    width: 80%;
+    
     
 }
 
 /* Investment Calculator */
 
 .currency-section-area{
+    
     padding:80px;
-    background-color: lightgreen;
+    
 }
 .currency-section{
+    
     justify-content: space-evenly;
+    border-radius: 25px;
+    border: 0.5px solid #6947bf;
+    box-shadow: #6947bf 0 0 20px;
+    padding: 40px;
     gap:40px;
 }
 
 
 .left-text-section{
-    width: 35%;
-    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    align-items: flex-start;
 }
 .left-text-section h1{
     line-height: 1.25;
-    color: black;
+    color: #6947bf;
+    max-width: 90%;
+    margin-bottom: 10px;
 }
 .left-text-section p{
-    color: grey;
+    color:grey;
     font-size: 1.75rem;
     line-height: 1.25;
 }
 
 .right-currency-section{
    width: 40%;
+   border: 1px solid #6947bf;
+   border-radius:20px ;
+   /* box-shadow: #6947bf 0 0 20px; */
 }
 .currency-selection{
     padding:20px;
     display:flex;
     flex-direction: column;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     border-radius: 20px;
     
 }
@@ -197,7 +208,7 @@
     padding:20px;
     display:flex;
     flex-direction: column;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     border-radius: 20px;
 }
 
@@ -215,7 +226,7 @@
 .total-value{
     margin-top: 20px;
     padding:20px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     border-radius: 20px;
 }
 .total-value label{
@@ -225,4 +236,9 @@
 }
 
 
-
+.last{
+    padding: 30px;
+    justify-content: center;
+    color:#6947bf;
+    margin-bottom: 40px;
+}
